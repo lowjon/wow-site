@@ -1,0 +1,33 @@
+$back-image: '../src/img/spices.jpg';
+$margin: 80px;
+$padding: 80px;
+$arrow-size: 120px;
+$nav-icon-size: 100px;
+
+
+
+   
+
+.home-shell{
+  font-size: 5rem;
+  width: 100vw;
+  height:100vh;
+  background: url($back-image) center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  h1{
+    font-size: 20rem;
+  }
+
+  .down-arrow{
+    width: $arrow-size;
+    height: $arrow-size;
+    margin-bottom: $margin;
+
+  }
+
+}

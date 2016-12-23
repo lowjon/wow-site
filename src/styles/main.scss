@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+$main-font: Roboto, sans-serif;
+$primary-color: #fff;
+$secondary-color: grey;
+$margin: 80px;
+$padding: 80px;
+$nav-icon-size: 100px;
+
+
+
+html{
+  font-size: 12px;
+}
+body{
+  font-size: 1.2rem;
+  font-family: $main-font;
+  color: $primary-color;
+}
+
+.popout-menu-hide{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  left: -101vw;
+  top: 0;
+  background: rgba(0,0,0, 0.5);
+  // opacity: .6;
+  font-size: 7rem;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  line-height: 110px;
+}
+.popout-menu-show{
+  left:0;
+}
+
+
+.top-nav{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position:fixed;
+  top:0;
+  padding: $padding;
+  z-index: 5;
+
+  .nav-left{
+    width: $nav-icon-size;
+    height: $nav-icon-size;
+
+  }
+}
+
+.other-stuff{
+  height: 200vh;
+  background-color: green;
+}
