@@ -15,7 +15,7 @@ gulp.task('hello', function () {
 
 gulp.task('build-css', function () {
   // gulp puts the reset files first then the rest of the files
-    return gulp.src(['./src/styles/reset.css','./src/**/*.*css'])
+    return gulp.src(['./src/styles/reset.css','./src/**/*.scss'])
       .pipe(sourcemaps.init())
       .pipe(sass())
       .pipe(cachebust.resources())
@@ -43,5 +43,5 @@ gulp.task('build', ['build-css', 'build-js'], function() {
 });
 
 gulp.task('watch', function() {
-    return gulp.watch(['./index.html','./src/**/*.html', './src/**/*.*css', './src/**/*.js'], ['build']);
+    return gulp.watch(['./index.html','./src/**/*.html', './src/**/*.scss', './src/**/*.js'], ['build']);
 });

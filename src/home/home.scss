@@ -1,4 +1,4 @@
-$back-image: '../src/img/spices.jpg';
+$back-image: '../src/img/bake.jpg';
 $margin: 80px;
 $padding: 80px;
 $arrow-size: 120px;
@@ -6,12 +6,12 @@ $nav-icon-size: 100px;
 
 
 
-   
+
 
 .home-shell{
   font-size: 5rem;
   width: 100vw;
-  height:100vh;
+  height:120vh;
   background: url($back-image) center no-repeat;
   background-size: cover;
   display: flex;
@@ -26,8 +26,22 @@ $nav-icon-size: 100px;
   .down-arrow{
     width: $arrow-size;
     height: $arrow-size;
-    margin-bottom: $margin;
-
+    margin-bottom: $padding;
   }
 
+}
+.home-landing{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hours-bit{
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  line-height: 100px;
 }

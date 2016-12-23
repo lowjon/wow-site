@@ -25,7 +25,6 @@ body{
   left: -101vw;
   top: 0;
   background: rgba(0,0,0, 0.5);
-  // opacity: .6;
   font-size: 7rem;
   z-index: 3;
   display: flex;
@@ -59,7 +58,26 @@ body{
   }
 }
 
-.other-stuff{
-  height: 200vh;
-  background-color: green;
+.wide-nav-menu{
+  margin-top: 5vh;
+  font-size: 3rem;
+  visibility: hidden;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (min-width: 1000px) {
+  .nav-left{
+    display: none;
+  }
+  .wide-nav-menu{
+    visibility: visible;
+  }
+  .top-nav{
+    padding: 0;
+  }
 }

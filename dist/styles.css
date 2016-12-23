@@ -46,11 +46,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.contact-div {
+  width: 100vw;
+  height: 100vh;
+  background: url(../src/img/cafe.jpg) center no-repeat;
+  background-size: cover; }
+
 .home-shell {
   font-size: 5rem;
   width: 100vw;
-  height: 100vh;
-  background: url("../src/img/spices.jpg") center no-repeat;
+  height: 120vh;
+  background: url("../src/img/bake.jpg") center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -63,9 +69,26 @@ table {
     height: 120px;
     margin-bottom: 80px; }
 
-.mobile-nav-shell {
+.home-landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.hours-bit {
   width: 100vw;
-  height: 100vh; }
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  line-height: 100px; }
+
+.menu-div {
+  width: 100vw;
+  height: 100vw;
+  background: grey;
+  color: white; }
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 html {
@@ -110,8 +133,23 @@ body {
     width: 100px;
     height: 100px; }
 
-.other-stuff {
-  height: 200vh;
-  background-color: green; }
+.wide-nav-menu {
+  margin-top: 5vh;
+  font-size: 3rem;
+  visibility: hidden;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+@media (min-width: 1000px) {
+  .nav-left {
+    display: none; }
+  .wide-nav-menu {
+    visibility: visible; }
+  .top-nav {
+    padding: 0; } }
 
 /*# sourceMappingURL=maps/styles.css.map */

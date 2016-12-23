@@ -8,22 +8,34 @@ angular.module('wowApp', ['ui.router']).config(function ($stateProvider, $urlRou
     controller: 'homeCtrl',
     url: '/',
     templateUrl: './src/home/home.html'
+  }).state('menu', {
+    controller: 'menuCtrl',
+    url: '/menu',
+    templateUrl: './src/menu/menu.html'
+  }).state('contact', {
+    controller: 'contactCtrl',
+    url: '/contact',
+    templateUrl: './src/contact/contact.html'
   });
 });
 'use strict';
 
-angular.module('wowApp').controller('homeCtrl', function ($scope) {
-  $scope.homeViewIsBroken = 'Home view is up and running';
+angular.module('wowApp').controller('contactCtrl', function ($scope) {});
+'use strict';
 
-  $scope.hamClick = function () {};
-});
-"use strict";
+angular.module('wowApp').controller('homeCtrl', function ($scope) {});
 'use strict';
 
 angular.module('wowApp').controller('mainCtrl', function ($scope) {
 
   $('.nav-left').on('click', function () {
-    $('.popout-menu-hide').toggleClass('popout-menu-show', 500, "swing");
+    $('.popout-menu-hide').toggleClass('popout-menu-show', 500, 'swing');
+  });
+  $('.mobile-menu').on('click', function () {
+    $('.popout-menu-show').removeClass('popout-menu-show', 500, 'swing');
   });
 });
+'use strict';
+
+angular.module('wowApp').controller('menuCtrl', function ($scope) {});
 //# sourceMappingURL=bundle.js.map
