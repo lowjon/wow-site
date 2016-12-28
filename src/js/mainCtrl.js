@@ -6,7 +6,7 @@ angular.module('wowApp').controller('mainCtrl', function ($scope) {
   $('.mobile-menu').on('click', function () {
     $('.popout-menu-show').removeClass('popout-menu-show', 500, 'swing')
   })
-
+  
 
 
 

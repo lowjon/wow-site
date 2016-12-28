@@ -18,6 +18,7 @@ angular.module('wowApp', ['ui.router']).config(function ($stateProvider, $urlRou
     templateUrl: './src/contact/contact.html'
   });
 });
+"use strict";
 'use strict';
 
 angular.module('wowApp').controller('contactCtrl', function ($scope) {});
