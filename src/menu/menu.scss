@@ -1,6 +1,14 @@
+$menu-back-image: '../src/img/bg_texture.jpg';
+$margin: 80px;
+$padding: 80px;
+$arrow-size: 120px;
+$nav-icon-size: 100px;
+
+
 .menu-div{
   width: 100vw;
-  height: 100vw;
-  background: grey;
+  height: 200vh;
+  background: url($menu-back-image) center no-repeat;
+  background-size: cover;
   color: white;
 }

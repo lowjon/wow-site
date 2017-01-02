@@ -20,6 +20,11 @@ angular.module('wowApp', ['ui.router'])
         url: '/contact',
         templateUrl: './src/contact/contact.html'
       })
+      .state('about', {
+        controller: 'aboutCtrl',
+        url: '/about',
+        templateUrl: './src/about/about.html'
+      })
 
 
   })

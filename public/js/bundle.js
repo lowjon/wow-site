@@ -16,15 +16,21 @@ angular.module('wowApp', ['ui.router']).config(function ($stateProvider, $urlRou
     controller: 'contactCtrl',
     url: '/contact',
     templateUrl: './src/contact/contact.html'
+  }).state('about', {
+    controller: 'aboutCtrl',
+    url: '/about',
+    templateUrl: './src/about/about.html'
   });
 });
-"use strict";
 'use strict';
 
-angular.module('wowApp').controller('homeCtrl', function ($scope) {});
+angular.module('wowApp').controller('aboutCtrl', function ($scope) {});
 'use strict';
 
 angular.module('wowApp').controller('contactCtrl', function ($scope) {});
+'use strict';
+
+angular.module('wowApp').controller('homeCtrl', function ($scope) {});
 'use strict';
 
 angular.module('wowApp').controller('mainCtrl', function ($scope) {

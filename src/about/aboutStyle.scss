@@ -1,0 +1,8 @@
+$menu-back-image: '../src/img/chef.jpg';
+
+.about-shell{
+  width: 100vw;
+  height: 200vh;
+  background: url($menu-back-image) center no-repeat;
+  background-size: cover;
+}

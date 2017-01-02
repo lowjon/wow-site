@@ -46,6 +46,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.about-shell {
+  width: 100vw;
+  height: 200vh;
+  background: url("../src/img/chef.jpg") center no-repeat;
+  background-size: cover; }
+
+.contact-div {
+  width: 100vw;
+  height: 100vh;
+  background: url(../src/img/cafe.jpg) center no-repeat;
+  background-size: cover; }
 
 .home-shell {
   font-size: 5rem;
@@ -79,11 +90,12 @@ table {
   background: rgba(0, 0, 0, 0.6);
   line-height: 100px; }
 
-.contact-div {
+.menu-div {
   width: 100vw;
-  height: 100vh;
-  background: url(../src/img/cafe.jpg) center no-repeat;
-  background-size: cover; }
+  height: 200vh;
+  background: url("../src/img/bg_texture.jpg") center no-repeat;
+  background-size: cover;
+  color: white; }
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 html {
@@ -146,11 +158,5 @@ body {
     visibility: visible; }
   .top-nav {
     padding: 0; } }
-
-.menu-div {
-  width: 100vw;
-  height: 100vw;
-  background: grey;
-  color: white; }
 
 /*# sourceMappingURL=maps/styles.css.map */
