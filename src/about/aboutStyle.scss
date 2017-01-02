@@ -2,7 +2,16 @@ $menu-back-image: '../src/img/about_bg.jpg';
 
 .about-shell{
   width: 100vw;
-  height: 200vh;
+  height: 100vh;
   background: url($menu-back-image) center no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.lorem-about{
+  width: 80vw;
+  color: #fff;
+  padding-bottom: 80px;
 }

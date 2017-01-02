@@ -30,7 +30,12 @@ angular.module('wowApp').controller('aboutCtrl', function ($scope) {});
 angular.module('wowApp').controller('contactCtrl', function ($scope) {});
 'use strict';
 
-angular.module('wowApp').controller('homeCtrl', function ($scope) {});
+angular.module('wowApp').controller('homeCtrl', function ($scope) {
+  $('.down-arrow').on('click', function () {
+    $("html, body").animate({ scrollTop: $(document).height() }, "swing");
+    return false;
+  });
+});
 'use strict';
 
 angular.module('wowApp').controller('mainCtrl', function ($scope) {
