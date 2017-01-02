@@ -21,10 +21,10 @@ angular.module('wowApp', ['ui.router']).config(function ($stateProvider, $urlRou
 "use strict";
 'use strict';
 
-angular.module('wowApp').controller('contactCtrl', function ($scope) {});
+angular.module('wowApp').controller('homeCtrl', function ($scope) {});
 'use strict';
 
-angular.module('wowApp').controller('homeCtrl', function ($scope) {});
+angular.module('wowApp').controller('contactCtrl', function ($scope) {});
 'use strict';
 
 angular.module('wowApp').controller('mainCtrl', function ($scope) {
