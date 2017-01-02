@@ -21,7 +21,7 @@ gulp.task('build-css', function () {
       .pipe(cachebust.resources())
       .pipe(concat('styles.css'))
       .pipe(sourcemaps.write('./maps'))
-      .pipe(gulp.dest('./dist'))
+      .pipe(gulp.dest('./public'))
 })
 
 gulp.task('build-js', [], function() {
@@ -33,13 +33,13 @@ gulp.task('build-js', [], function() {
       //.pipe(uglify())
       //uncomment this ^ to export for production... not very useful for development/ debugging
       .pipe(sourcemaps.write('./'))
-      .pipe(gulp.dest('./dist/js'));
+      .pipe(gulp.dest('./public/js'));
 })
 
 gulp.task('build', ['build-css', 'build-js'], function() {
     return gulp.src('index.html')
         .pipe(cachebust.references())
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('src'));
 });
 
 gulp.task('watch', function() {
