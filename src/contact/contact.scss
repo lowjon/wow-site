@@ -3,4 +3,12 @@
   height: 100vh;
   background: url(../src/img/cafe.jpg) center no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-title{
+  color: yellow;
+  padding: 20px;
+  
 }

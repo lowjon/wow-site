@@ -1,4 +1,4 @@
-$menu-back-image: '../src/img/bg_texture.jpg';
+$menu-back-image: '../src/img/chef.jpg';
 $margin: 80px;
 $padding: 80px;
 $arrow-size: 120px;
@@ -11,4 +11,14 @@ $nav-icon-size: 100px;
   background: url($menu-back-image) center no-repeat;
   background-size: cover;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+.generic-menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

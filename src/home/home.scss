@@ -4,44 +4,45 @@ $padding: 80px;
 $arrow-size: 120px;
 $nav-icon-size: 100px;
 
+.home-shell {
+    font-size: 5rem;
+    width: 100vw;
+    height: 120vh;
+    background: url($back-image) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 
+    h1 {
+        font-size: 20rem;
+    }
 
-
-
-.home-shell{
-  font-size: 5rem;
-  width: 100vw;
-  height:120vh;
-  background: url($back-image) center no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-
-  h1{
-    font-size: 20rem;
-  }
-
-  .down-arrow{
-    width: $arrow-size;
-    height: $arrow-size;
-    margin-bottom: $padding;
-  }
-
+    .down-arrow {
+        width: $arrow-size;
+        height: $arrow-size;
+        margin-bottom: $padding;
+    }
 }
-.home-landing{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.home-landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.hours-bit{
-  width: 100vw;
-  height: 20vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0,0,0,0.6);
-  line-height: 100px;
+
+.hours-bit {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+    line-height: 100px;
+
+    h3 {
+        font-size: 5rem;
+    }
 }
