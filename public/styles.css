@@ -52,6 +52,19 @@ table {
   background: url("../src/img/about_bg.jpg") center no-repeat;
   background-size: cover; }
 
+.contact-div {
+  width: 100vw;
+  height: 100vh;
+  background: url(../src/img/cafe.jpg) center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.contact-title {
+  color: yellow;
+  padding: 20px; }
+
 .home-shell {
   font-size: 5rem;
   width: 100vw;
@@ -85,19 +98,6 @@ table {
   line-height: 100px; }
   .hours-bit h3 {
     font-size: 5rem; }
-
-.contact-div {
-  width: 100vw;
-  height: 100vh;
-  background: url(../src/img/cafe.jpg) center no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.contact-title {
-  color: yellow;
-  padding: 20px; }
 
 .menu-div {
   width: 100vw;
